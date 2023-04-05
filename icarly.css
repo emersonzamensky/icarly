@@ -1,0 +1,76 @@
+.container {
+  position: relative;
+  text-align: center;
+}
+
+
+/* .image2 {
+position: relative;
+top: -300px;
+max-width: 50px;
+height: auto;
+} */
+
+
+
+.top-left {
+  position: absolute;
+  top: 110px;
+  left: 270px;
+  font-size: 65px;
+  font-family: 'iCarly', sans-serif;
+  color: rgb(246, 84, 174)
+}
+
+
+.top-right {
+  position: absolute;
+  top: 230px;
+  left: 750px;
+  transform: translate(-50%, -50%);
+  font-size: 45;
+  font-family: 'Oswald', sans-serif;
+  color: yellow;
+}
+
+.bottom-right {
+  position: absolute;
+  top: 48%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.centered {
+  position: absolute;
+  top: 230px;
+  left: 330px;
+  transform: translate(-50%, -50%);
+  font-size: 45;
+  font-family: 'Oswald', sans-serif;
+  color: yellow;
+}
+
+
+button {
+display: inline-block;
+outline: 0;
+border:0;
+cursor: pointer;
+text-decoration: none;
+position: relative;
+color: #000;
+background: #fff;
+line-height: 30px;
+border-radius: 40px;
+padding: 10px;
+font-size: 20px;
+font-weight: 600;
+box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+transition: all 0.2s;
+}
+button:hover{
+box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+transform: scale(1.01);
+}

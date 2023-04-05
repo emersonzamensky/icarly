@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+<title>Generator</title>
+<link rel="stylesheet" href="icarly.css">
+<link href="https://fonts.cdnfonts.com/css/icarly">
+<style>
+@import url('https://fonts.cdnfonts.com/css/icarly');
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+
+
+<div class="container">
+
+<img src="icarlybckrn.png" width= "100%;" height= "auto;" position= "relative;" top= 0; left= 0;>
+
+<div class="bottom-right"> <img src="samshirt.png" width="400px" height="auto" position= "relative;"> </div>
+
+</div>
+
+<div class="top-left">Penny Tee Generator</div>
+
+<div class="top-right">
+<div id="output">TEE</div>
+    <button id="button1">and here</button>
+</div>
+ 
+<div class="centered">
+<div id="outputs">PENNY</div>
+<button id="button2">click here</button>
+  </div>
+
+
+<script>
+var btn = document.getElementById("button1");
+var out = document.getElementById("output");
+btn.addEventListener("click", getWord);
+function getWord(){
+var theWord = [
+'COW',
+'FATHER',
+'MOTHER',
+'DEPRESSION',
+'TEACHER',
+'OCEAN',
+'PICKLE',
+'EYEBROW',
+'TOOTH',
+'DINOSAUR',
+'WEEKEND',
+'CHICKEN',
+'RAT',
+'GOATSKIN',
+'PIMP',
+'BOSS',
+'ASSISTANT',
+'IDIOT',
+'KNEE',
+'TOAST',
+'FLASK',
+'HAMBURGER',
+'EUROPEAN',
+'FINGERNAIL',
+'ATMOSPHERE',
+'TONGUE',
+'INSPECTION',
+'EXAMINATION',
+'ALCOHOLIC',
+'PRISONER',
+'SCARF',
+'TRASH',
+'CORNDOG',
+'TOFU',
+'WHALE',
+'TEENAGER',
+'GARBAGE',
+'EYELASH',
+'BEANBAG',
+'SISTER',
+'BROTHER',
+'GRANDPA',
+'TAX FRAUD',
+'EVICTION',
+'KING',
+'QUEEN',
+'POETRY',
+'SITUATION',
+'ENGINEER',
+'DOCTOR',
+'ALGEBRA',
+'FEMALE',
+'MALE'
+];
+
+var wordNum = Math.floor(Math.random() * theWord.length);
+out.textContent = theWord[wordNum];
+    
+}
+
+
+var btns = document.getElementById("button2");
+var outs = document.getElementById("outputs");
+
+btns.addEventListener("click", getWords);
+function getWords(){
+var theWords= [
+'ELITE',
+'WIDE',
+'SWELTERING',
+'NARROW',
+'GULLIBLE',
+'UGLIEST',
+'FAT',
+'BRAWNY',
+'QUIRKY',
+'WATERY',
+'FAMOUS',
+'ALCOHOLIC',
+'RIPE',
+'MINOR',
+'WARM',
+'CHEATING',
+'SEXY',
+'SEXIST',
+'MOIST',
+'FRESH',
+'PARALLEL',
+'LYRICAL',
+'SECRET',
+'CLEAN',
+'LOVING',
+'EMPTY',
+'SUBSEQUENT',
+'HAIRY',
+'SALTY',
+'CHEWY',
+'COLORFUL',
+'FOREIGN',
+'UNCLE',
+'MR.',
+'MRS.',
+'NIMBLE',
+'SCRAWNY',
+'LOOSE',
+'DESPERATE',
+'MATERIALISTIC',
+'TYPICAL',
+'ALOOF',
+'WHIMSICAL',
+'SLEEPY',
+'TREMDENDOUS',
+'ZEALOUS'
+];
+
+var wordNums = Math.floor(Math.random() * theWords.length);
+
+
+outs.textContent = theWords[wordNums];
+}
+
+
+
+</script>
+
+</html>
+
